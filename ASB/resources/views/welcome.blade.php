@@ -20,7 +20,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+.bgimg-2, .bgimg-4, .bgimg-5, .bgimg-6 {
     opacity: 0.9;
     background-attachment: fixed;
     background-position: center;
@@ -33,23 +33,31 @@ body, html {
     background-image: url('images/bio.jpg');
     min-height: 100%;
     opacity: 0.9;
+    background-color: #fff;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 1550px;
     width: auto;
-    height: auto;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-    background-image: url('images/contactus.jpg');
-    min-height: 400px;
+    background-image: url('images/contact2.png');
+    background-color: #fff;
+    min-height: 200px;
+    min-width: 400px;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 /* sixth image (footprint)*/
 .bgimg-6 {
-    background-image: url('images/rules2.png');
-    min-height: 400px;
+    background-image: url('images/rules1.jpg');
+    min-height: 350px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -261,17 +269,12 @@ element {
 
 <div class="bgimg-1 w3-display-container" id="registernow">
   <div class="w3-display-middle" style="white-space:nowrap;">
-      <!--<P class="text-center"><img src="{{asset('images/logo_full.png')}}" alt="logo"></p>-->
-    <!--<center><a href="{{ url('/results') }}" style="text-decoration:none"><span class="w3-center w3-padding-xlarge w3-orange w3-xlarge w3-wide w3-animate-opacity slideanim hvr-skew-forward" data-hover="NOW" style="border-radius:10px;text-decoration:none;"><strong>REGISTER <span class="w3-hide-small hvr-skew-forward"></span>NOW</strong></span></a></center>-->
 <br>
-    <!--<h2 class="text-center slideanim" style="color:red"><span class="fa fa-calendar-o"> &nbsp; </span>27th, 28th Jan 2017</h2>-->
-
-     <!-- <h3 class="text-center slideanim" style="color:red;"><span class="fa fa-map-marker"></span> Amrita School of Engineering, Amritapuri</h3>-->
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div style=" opacity: 0.7;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; width: auto; background-image:url('images/sky.jpg')">
+<div style=" opacity: 0.7;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; width: auto; background-image:url('images/events.jpg')">
 
 <div id="events" class="w3-content w3-container w3-padding-64" style="color:#000">
   <h3 class="w3-center slideanim">Events</h3>
@@ -282,97 +285,89 @@ element {
             <th>Men</th>
             <th>Women</th>
         </tr>
-        <!--<tr>
-              <td colspan="2">
-          <center>March Past</center></td>
-      </tr>-->
         <tr>
-            <td>100mtr</td>
-            <td>100mtr</td>
+            <td style="background-color:blue; color:#fff;" >100mtr</td>
+            <td style="background-color:green; color:#fff;" >100mtr</td>
         </tr>
         <tr>
-            <td>200mtr</td>
-            <td>200mtr</td>
+            <td style="background-color:blue; color:#fff;" >200mtr</td>
+            <td style="background-color:green; color:#fff;" >200mtr</td>
         </tr>
         <tr>
-            <td>400mtr</td>
-            <td>400mtr</td>
+            <td style="background-color:blue; color:#fff;" >400mtr</td>
+            <td style="background-color:green; color:#fff;" >400mtr</td>
         </tr>
         <tr>
-            <td>800mtr</td>
-            <td>800mtr</td>
+            <td style="background-color:blue; color:#fff;" >800mtr</td>
+            <td style="background-color:green; color:#fff;" >800mtr</td>
         </tr>
         <tr>
-            <td>1500mtr</td>
-            <td>1500mtr</td>
+            <td style="background-color:blue; color:#fff;" >1500mtr</td>
+            <td style="background-color:green; color:#fff;" >1500mtr</td>
         </tr>
         <!--<tr>
-            <td>5000mtr</td>
-            <td>100mtr hurdles</td>
+            <td style="background-color:blue; color:#fff;" >5000mtr</td>
+            <td style="background-color:blue; color:#fff;" >100mtr hurdles</td>
         </tr>-->
         <tr>
-            <td></td>
-            <!--<td>10000mtr</td>-->
-            <td>medley relay</td>
+            <td style="background-color:blue; color:#fff;" ></td>
+            <!--<td style="background-color:blue; color:#fff;" >10000mtr</td>-->
+            <td style="background-color:green; color:#fff;" >medley relay</td>
         </tr>
         <tr>
-            <td>110mtr hurdles</td>
-            <td>4x100mtr relay</td>
+            <td style="background-color:blue; color:#fff;" >110mtr hurdles</td>
+            <td style="background-color:green; color:#fff;" >4x100mtr relay</td>
         </tr>
         <tr>
-            <td>400mtr hurdles</td>
-            <td>Triple jump</td>
+            <td style="background-color:blue; color:#fff;" >400mtr hurdles</td>
+            <td style="background-color:green; color:#fff;" >Triple jump</td>
         </tr>
         <tr>
-            <td>4x100mtr relay</td>
-            <td>long jump</td>
+            <td style="background-color:blue; color:#fff;" >4x100mtr relay</td>
+            <td style="background-color:green; color:#fff;" >long jump</td>
         </tr>
         <tr>
-            <td>4x400mtr relay</td>
-            <!--<td>high jump</td>-->
-            <td></td>
+            <td style="background-color:blue; color:#fff;" >4x400mtr relay</td>
+            <td style="background-color:green; color:#fff;" ></td>
         </tr>
         <tr>
-            <td>long jump</td>
-            <td>discuss throw</td>
+            <td style="background-color:blue; color:#fff;" >long jump</td>
+            <td style="background-color:green; color:#fff;" >discuss throw</td>
         </tr>
         <tr>
-            <td>high jump</td>
-            <td>hammer throw</td>
+            <td style="background-color:blue; color:#fff;" >high jump</td>
+            <td style="background-color:green; color:#fff;" >hammer throw</td>
         </tr>
         <tr>
-            <td>triple jump</td>
-            <td>javelin throw</td>
+            <td style="background-color:blue; color:#fff;" >triple jump</td>
+            <td style="background-color:green; color:#fff;" >javelin throw</td>
         </tr>
         <tr>
-            <td>shot put</td>
-            <td>shot put</td>
+            <td style="background-color:blue; color:#fff;" >shot put</td>
+            <td style="background-color:green; color:#fff;" >shot put</td>
         </tr>
         <tr>
-            <td>javelin throw</td>
-            <td></td>
+            <td style="background-color:blue; color:#fff;" >javelin throw</td>
+            <td style="background-color:green; color:#fff;" ></td>
         </tr>
         <tr>
-            <td>Hammer throw</td>
-            <td></td>
+            <td style="background-color:blue; color:#fff;" >Hammer throw</td>
+            <td style="background-color:green; color:#fff;" ></td>
         </tr>
         <tr>
-            <td>Discuss throw</td>
-            <td></td>
+            <td style="background-color:blue; color:#fff;" >Discuss throw</td>
+            <td style="background-color:green; color:#fff;" ></td>
         </tr>
         </table>
   </div>
 </div>
 </div>
 </div>
-<!-- Second Parallax Image with Portfolio Text -->
 
-<!-- Container (Portfolio Section) -->
-<div <div style=" opacity: 1.0;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; width: auto; background-color:#000;">
+<div style=" opacity: 0.7;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; width: auto; background-image:url('images/departments.jpg')">
 <div id="departments" class="w3-content w3-container w3-padding-64" style="color:#fff!important">
 <h3 class="w3-center w3-container slideanim"></h3>
   <p class="w3-container w3-center slideanim"></p>
-  <!-- Amrita school of engineering -->
   <h2 class="slideanim"><center>Departments</center></h2>
   <br>
   <br>
@@ -380,20 +375,16 @@ element {
 <div class="panel panel-default" style="background-color:#a52a2a; box-shadow:20px " >
  <div class="panel-heading" role="tab" id="headingOne" style="background-color:#a52a2a ; border-radius:50px;">
     <h4 class="panel-title" style="border-radius:50px; ">
-     <a style="border-radius:50px;" class="collapsed" role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-         <!-- Amrita school of engineering -->
-        <!--<h3 ><center>CSA</center></h3>--> <h3><center>First Year</center></h3>
+     <a style="border-radius:50px; color:#fff;" class="collapsed" role="button" data-toggle="collapse"  data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <h3><center>First Year</center></h3>
       </a>
     </h4>
   </div>
 
   <div id="collapseOne" class="panel-collapse collapse "  role="tabpanel" aria-labelledby="headingOne">
-    <div class="panel-body" style="color:#000; border-radius:50px;">
+    <div class="panel-body" style= "border-radius:50px;">
         <p><center>BSC BIOTECHNOLOGY</center></p>
         <p><center>BSC MICROBIOLOGY</center></p>
-        <!--Amrita school of engineering-->
-        <!--<p><center>BCA</center></p>
-        <p><center>MCA</center></p>-->
     </div>
   </div>
 </div>
@@ -401,10 +392,9 @@ element {
 <div class="panel panel-default" style="background-color:#a52a2a ">
   <div class="panel-heading" role="tab" id="headingTwo" style="background-color:#a52a2a; border-radius:50px; ">
     <h4 class="panel-title" style="border-radius:50px;">
-      <a style="border-radius:50px;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <a style="border-radius:50px; color:#fff;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         <h3 ><center>Second Year</center></h3>
-        <!-- Amrita school of engineering -->
-        <!--<h3 ><center>CSE</center></h3>-->
+
       </a>
     </h4>
   </div>
@@ -412,72 +402,45 @@ element {
     <div class="panel-body" style="border-radius:50px;">
         <p><center>BSC BIOTECHNOLOGY</center></p>
         <p><center>BSC MICROBIOLOGY</center></p>
-        <!-- Amrita school of engineering  -->
-        <!--
-        <p><center>Btech</center></p>
-        <p><center>E-learning</center></p>
-        <p><center>WNA</center></p>
-        <p><center>Cyber</center></p>-->
   </div>
 </div>
 </div>
 <div class="panel panel-default" style="background-color:#a52a2a ">
   <div class="panel-heading" role="tab" id="headingThree" style="background-color:#a52a2a; border-radius:50px; ">
     <h4 class="panel-title" style="border-radius:50px;">
-      <a style="border-radius:50px;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <a style="border-radius:50px; color:#fff;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           <h3><center>Third Year</center></h3>
-          <!-- Amrita school of engineering  -->
-        <!--<h3 ><center>ECE</center></h3>-->
       </a>
     </h4>
   </div>
   <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
     <div class="panel-body" style="border-radius:50px;">
-
-        <!-- Amrita school of engineering -->
-        <!--<p><center>Btech</center></p>
-        <p><center>VLSI</center></p>-->
+        <p><center>BSC BIOTECHNOLOGY</center></p>
+        <p><center>BSC MICROBIOLOGY</center></p>
   </div>
 </div>
 </div>
 <div class="panel panel-default" style="background-color:#a52a2a ">
   <div class="panel-heading" role="tab" id="headingFour" style="background-color:#a52a2a; border-radius:50px; ">
     <h4 class="panel-title" style="border-radius:50px;">
-      <a style="border-radius:50px;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        <h3 ><center>EEE</center></h3>
+      <a style="border-radius:50px; color:#fff;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <h3 ><center>Msc</center></h3>
       </a>
     </h4>
   </div>
   <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
     <div class="panel-body" style="border-radius:50px;">
-        <p><center>Btech</center></p>
-        <p><center>Power Engg</center></p>
-        <p><center>CSI</center></p>
+        <p><center>BSC BIOTECHNOLOGY</center></p>
+        <p><center>BSC MICROBIOLOGY</center></p>
   </div>
 </div>
 </div>
 
-<div class="panel panel-default"  style="background-color:#a52a2a ">
-  <div class="panel-heading" role="tab" id="headingFive"  style="background-color:#a52a2a; border-radius:50px; ">
-    <h4 class="panel-title" style="border-radius:50px;">
-      <a style="border-radius:50px;"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-        <h3 ><center>Mech</center></h3>
-      </a>
-    </h4>
-  </div>
-  <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-    <div class="panel-body" style="border-radius:50px;">
-        <p><center>Btech</center></p>
-        <p><center>TF</center></p>
-        <p><center>Robotics and Auto</center></p>
-    </div>
-  </div>
-  </div>
 </div>
 </div>
  </div>
 
- <div class="bgimg-6 w3-display-container">
+ <div id="rules" class="bgimg-6 w3-display-container">
    <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-light-grey w3-wide">Rules &  Regulations</span>
    </div>
@@ -486,22 +449,23 @@ element {
 
  <!-- Container (Portfolio Section) -->
  <div style="background-color:#000;color:#fff!important;">
- <div id="rules" class="w3-content w3-container w3-padding-64">
+ <div  class="w3-content w3-container w3-padding-64">
    <h2 class=" w3-container slideanim">Rules & Regulations</h2>
-   <p class="w3-container w3-center slideanim" style="background-color:#fff;color:#000!important"></p>
+   <h2 class=" w3-container slideanim">__________________________________________________________________________</h2>
+  <!-- <p class="w3-container w3-center " style="background-color:#fff;color:#000!important"></p>-->
   </div>
  <div class="row" style="background-color:#000;color:#fff!important">
    <div class="col-sm-12 col-xs-70" style="background-color:#000;color:#fff!important">
    <div>
        <ul class="col-md-offset-3">
-           <li class="fa fa-check"> All students on the rolls of Amrita School Of Engineering are eligible to participate.</li><br>
-           <li class="fa fa-check"> The sports meet is conducted on Inter Branch Basis.</li><br>
+           <li class="fa fa-check"> All students on the rolls of Amrita School Of Biotechnology are eligible to participate.</li><br>
+           <li class="fa fa-check"> The sports meet is conducted on Year Basis.</li><br>
            <li class="fa fa-check"> A single student can enter for a maximum of 3 individual items.</li><br>
            <li class="fa fa-check"> An individual event will be conducted only if there is a minimum of 3 participants.</li><br>
            <li class="fa fa-check"> For team events,there can be a maximum of two team per batch. </li><br>
            <li class="fa fa-check"> First, second, and third prizes will be given for each individual item.</li><br>
-           <li class="fa fa-check"> The overall championship will be awarded to the branch scoring maximum points based on the points for sports events.</li><br>
-           <li class="fa fa-check"> Registration will be closed at 2:00pm on 25th Jan</li><br>
+           <li class="fa fa-check"> The overall championship will be awarded to the year scoring maximum points based on the points for sports events.</li><br>
+           <li class="fa fa-check"> Registration will be closed at 2:00pm on 25th Jan</li>
        </ul>
 
    </div>
@@ -512,24 +476,60 @@ element {
 
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT US</span>
+
+<!-- Container (Contact Section) -->
+<div style="background-color:#fff;">
+<div id="contact" class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center slideanim"></h3>
+  <div class="container">
+
+    <form class="well form-horizontal slideanim" style="background-color:#000;">
+<fieldset style="border-color:#fff; background-color:#000;">
+
+<!-- Form Name -->
+<legend style="color:#fff;">Contact Us  !</legend>
+
+<!-- Text input-->
+
+<div class="form-group slideanim">
+  <label class="col-md-4 control-label">Name</label>
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-user"></i></span>
+  <input  name="first_name"  class="form-control"  type="display" style="background-color:#000; color:#fff;" value="KAVITHA (Physical Education Department)" readonly>
+    </div>
+  </div>
+</div>
+<!-- Text input-->
+       <div class="form-group slideanim">
+  <label class="col-md-4 control-label">E-Mail</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+  <input name="email" class="form-control"  type="display" style="background-color:#000; color:#fff;" value="arjunnmisme@gmail.com" readonly >
+    </div>
   </div>
 </div>
 
-<!-- Container (Contact Section) -->
-<div style=" opacity: 1.0;background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; width: auto; background-image:url('images/sky.jpg')">
-<div id="contact" class="w3-content w3-container w3-padding-64">
-  <h3 class="w3-center slideanim">CONTACT US</h3>
-</div>
-<!-- Footer -->
-<footer class="w3-center  w3-padding-16 w3-opacity w3-hover-opacity-off" style="background-color:#000;color:white !important">
-  <div class="w3-xlarge ">
-    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
-     <a href="#" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i></a>
+
+<!-- Text input-->
+
+<div class="form-group slideanim">
+  <label class="col-md-4 control-label">Phone #</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-phone-square"></i></span>
+  <input name="phone" class="form-control" type="display" style="background-color:#000; color:#fff;" value="9995097178" readonly>
+    </div>
   </div>
+</div>
+</fieldset>
+</div>
+</div>
+<!-- Text input-->
+<!-- Text input-->
+<!-- Footer -->
+<footer class="w3-center  w3-padding-16  w3-hover-opacity-on" style="background-color:#000;color:white !important">
   <p>Copyright © 2016 | All rights reserved |Developed by <a href="{{ url('/webteam') }}" title="AM.AR.U315BCA0 15,27&67" target="_blank" class="w3-hover-text-green">Web-Team</a></p>
 </footer>
 
