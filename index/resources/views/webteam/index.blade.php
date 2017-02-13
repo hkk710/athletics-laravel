@@ -245,7 +245,7 @@
                 <div class="w3-row"><br>
 
                 <div class="w3-quarter col-md-offset-0">
-                  <img src="{{asset('images/HARIKRISHNAAJ.jpg')}}" alt="" draggable="false" style="width:55%" class="w3-circle w3-hover-opacity">
+                  <img src="{{asset('images/hari.JPG')}}" alt="" draggable="false" style="width:55%" class="w3-circle w3-hover-opacity">
                   <h3>HARIKRISHNA AJ</h3>
                   <p>BCA(2015-2018)</p>
                   <p>Ph: &nbsp; 9447103444</p>
