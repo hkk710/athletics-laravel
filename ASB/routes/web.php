@@ -31,4 +31,8 @@ Route::group(['middleware' => 'admin'], function () {
     Route::post('/results', 'ResultsController@create');
     Route::post('/results/create', 'ResultsController@store');
     Route::post('/results/group', 'ResultsController@group');
+    Route::post('/results/group/create', 'ResultsController@groupstore');
+    Route::get('/result_view', 'ResultsController@show_ind');
+    Route::get('/result_view/{gender}/{id}', 'ResultsController@show_ind_form')->name('result.ind');
+    Route::get('/result_view/group', 'ResultsController@show_group');
 });

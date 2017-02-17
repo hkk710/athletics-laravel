@@ -259,7 +259,7 @@ element {
                         <li><a href="#contact">Contact</a></li>
                     @if (Auth::check())
                         <li> <a href="{{ url('/results') }}">Result Entry</a></li>
-                        <li> <a href="{{ url('#') }}">Result View</a></li>
+                        <li> <a href="{{ url('result_view') }}">View Results</a></li>
                    @endif
                     </nav>
                     </li>
@@ -501,7 +501,8 @@ element {
   </div>
 </div>
 <!-- Text input-->
-       <div class="form-group slideanim">
+<div class="slideanim">
+       <div class="form-group ">
   <label class="col-md-4 control-label">E-Mail</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -511,10 +512,8 @@ element {
   </div>
 </div>
 
-
 <!-- Text input-->
-
-<div class="form-group slideanim">
+<div class="form-group ">
   <label class="col-md-4 control-label">Phone #</label>
     <div class="col-md-4 inputGroupContainer">
     <div class="input-group">
@@ -522,6 +521,7 @@ element {
   <input name="phone" class="form-control" type="display" style="background-color:#000; color:#fff;" value="9995097178" readonly>
     </div>
   </div>
+</div>
 </div>
 </fieldset>
 </div>

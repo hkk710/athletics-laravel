@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Event;
 use App\Result;
 use App\Register;
+use App\Department;
 use Session;
 
 class ResultsController extends Controller
@@ -80,4 +81,33 @@ class ResultsController extends Controller
         }
         return view('results.group')->withEvent($event);
     }
+    public function groupstore(Request $request) {
+        $department1 = Department::find($request->department1);
+        $department1->score = $department1->score + 10;
+        $department1->save();
+
+        $department2 = Department::find($request->department2);
+        $department2->score = $department2->score + 6;
+        $department2->save();
+
+        $department3 = Department::find($request->department3);
+        $department3->score = $department3->score + 3;
+        $department3->save();
+
+        Session::flash('success', 'Score updated successfully');
+        return redirect('results');
+        }
+        public function show_ind() {
+            $events = Event::all();
+     	    return view('results.view')->withEvents($events);
+        }
+        public function show_ind_form($gender, $id) {
+            $event = Event::find($id);
+            $results = Result::all()->where('event_id', '=', $id);
+            return view('results.show')->withResults($results)->withEvent($event);
+        }
+        public function show_group() {
+            $departments = Department::all();
+            return view('results.viewgroup')->withDepartments($departments);
+        }
 }
