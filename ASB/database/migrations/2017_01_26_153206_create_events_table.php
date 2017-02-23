@@ -35,12 +35,12 @@ class CreateEventsTable extends Migration
         DB::table('events')->insert(
           ['event' => '1500mtr', 'gender' => 'male']
         );
-        DB::table('events')->insert(
-          ['event' => '5000mtr', 'gender' => 'male']
-        );
-        DB::table('events')->insert(
-          ['event' => '10000mtr', 'gender' => 'male']
-        );
+    //    DB::table('events')->insert(
+    //     ['event' => '5000mtr', 'gender' => 'male']
+    //    );
+    //    DB::table('events')->insert(
+    //      ['event' => '10000mtr', 'gender' => 'male']
+    //    );
         DB::table('events')->insert(
           ['event' => '110mtr hurdles', 'gender' => 'male']
         );
@@ -89,9 +89,9 @@ class CreateEventsTable extends Migration
         DB::table('events')->insert(
           ['event' => '1500mtr', 'gender' => 'female']
         );
-        DB::table('events')->insert(
+    /*    DB::table('events')->insert(
           ['event' => '100mtr hurdles', 'gender' => 'female']
-        );
+      );*/
         DB::table('events')->insert(
           ['event' => 'medley relay', 'gender' => 'female', 'relay' => true]
         );
@@ -104,9 +104,9 @@ class CreateEventsTable extends Migration
         DB::table('events')->insert(
           ['event' => 'long jump', 'gender' => 'female']
         );
-        DB::table('events')->insert(
+    /*    DB::table('events')->insert(
           ['event' => 'high jump', 'gender' => 'female']
-        );
+      );*/
         DB::table('events')->insert(
           ['event' => 'discuss throw', 'gender' => 'female']
         );

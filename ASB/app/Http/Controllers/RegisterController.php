@@ -34,84 +34,84 @@ class RegisterController extends Controller
         $register->email = $request->email;
         $register->gender = $request->gender;
         $register->batch = $request->batch;
-        if ($request->batch == 'ME') {
-            if (count($registers->where('batch', '=', 'ME')) >= 1100) {
-                if (count($registers->where('batch', '=', 'ME')) >= 200) {
+        if ($request->batch == 'FIRST YEAR') {
+            if (count($registers->where('batch', '=', 'FIRST YEAR')) >= 1100) {
+                if (count($registers->where('batch', '=', 'FIRST YEAR')) >= 200) {
                     # code...
                 }
-                elseif (count($registers->where('batch', '=', 'ME')) > 100) {
-                    $last = $registers->where('batch', '=', 'ME')->last();
+                elseif (count($registers->where('batch', '=', 'FIRST YEAR')) > 100) {
+                    $last = $registers->where('batch', '=', 'FIRST YEAR')->last();
                     $register->chest_no = $last->chest_no + 1;
                 }
                 else {
                     $register->chest_no = 1001;
                 }
             }
-            elseif (count($registers->where('batch', '=', 'ME')) > 0) {
-                $last = $registers->where('batch', '=', 'ME')->last();
+            elseif (count($registers->where('batch', '=', 'FIRST YEAR')) > 0) {
+                $last = $registers->where('batch', '=', 'FIRST YEAR')->last();
                 $register->chest_no = $last->chest_no + 1;
             }
             else {
                 $register->chest_no = 101;
             }
         }
-        if ($request->batch == 'ECE') {
-            if (count($registers->where('batch', '=', 'ECE')) >= 100) {
-                if (count($registers->where('batch', '=', 'ECE')) >= 200) {
+        if ($request->batch == 'SECOND YEAR') {
+            if (count($registers->where('batch', '=', 'SECOND YEAR')) >= 100) {
+                if (count($registers->where('batch', '=', 'SECOND YEAR')) >= 200) {
                     # code...
                 }
-                elseif (count($registers->where('batch', '=', 'ECE')) > 100) {
-                    $last = $registers->where('batch', '=', 'ECE')->last();
+                elseif (count($registers->where('batch', '=', 'SECOND YEAR')) > 100) {
+                    $last = $registers->where('batch', '=', 'SECOND YEAR')->last();
                     $register->chest_no = $last->chest_no + 1;
                 }
                 else {
                     $register->chest_no = 1101;
                 }
             }
-            elseif (count($registers->where('batch', '=', 'ECE')) > 0) {
-                $last = $registers->where('batch', '=', 'ECE')->last();
+            elseif (count($registers->where('batch', '=', 'SECOND YEAR')) > 0) {
+                $last = $registers->where('batch', '=', 'SECOND YEAR')->last();
                 $register->chest_no = $last->chest_no + 1;
             }
             else {
                 $register->chest_no = 201;
             }
         }
-        if ($request->batch == 'EEE') {
-            if (count($registers->where('batch', '=', 'EEE')) >= 100) {
-                if (count($registers->where('batch', '=', 'EEE')) >= 200) {
+        if ($request->batch == 'THIRD YEAR') {
+            if (count($registers->where('batch', '=', 'THIRD YEAR')) >= 100) {
+                if (count($registers->where('batch', '=', 'THIRD YEAR')) >= 200) {
                     # code...
                 }
-                elseif (count($registers->where('batch', '=', 'EEE')) > 100) {
-                    $last = $registers->where('batch', '=', 'EEE')->last();
+                elseif (count($registers->where('batch', '=', 'THIRD YEAR')) > 100) {
+                    $last = $registers->where('batch', '=', 'THIRD YEAR')->last();
                     $register->chest_no = $last->chest_no + 1;
                 }
                 else {
                     $register->chest_no = 1201;
                 }
             }
-            elseif (count($registers->where('batch', '=', 'EEE')) > 0) {
-                $last = $registers->where('batch', '=', 'EEE')->last();
+            elseif (count($registers->where('batch', '=', 'THIRD YEAR')) > 0) {
+                $last = $registers->where('batch', '=', 'THIRD YEAR')->last();
                 $register->chest_no = $last->chest_no + 1;
             }
             else {
                 $register->chest_no = 301;
             }
         }
-        if ($request->batch == 'CSE') {
-            if (count($registers->where('batch', '=', 'CSE')) >= 100) {
-                if (count($registers->where('batch', '=', 'CSE')) >= 200) {
+        if ($request->batch == 'MSC') {
+            if (count($registers->where('batch', '=', 'MSC')) >= 100) {
+                if (count($registers->where('batch', '=', 'MSC')) >= 200) {
                     # code...
                 }
-                elseif (count($registers->where('batch', '=', 'CSE')) > 100) {
-                    $last = $registers->where('batch', '=', 'CSE')->last();
+                elseif (count($registers->where('batch', '=', 'MSC')) > 100) {
+                    $last = $registers->where('batch', '=', 'MSC')->last();
                     $register->chest_no = $last->chest_no + 1;
                 }
                 else {
                     $register->chest_no = 1301;
                 }
             }
-            elseif (count($registers->where('batch', '=', 'CSE')) > 0) {
-                $last = $registers->where('batch', '=', 'CSE')->last();
+            elseif (count($registers->where('batch', '=', 'MSC')) > 0) {
+                $last = $registers->where('batch', '=', 'MSC')->last();
                 $register->chest_no = $last->chest_no + 1;
             }
             else {
@@ -143,11 +143,11 @@ class RegisterController extends Controller
         $register->event_one = Event::find($request->event_one)->event;
         $register->event_two = Event::find($request->event_two)->event;
         $register->event_three = Event::find($request->event_three)->event;
-        Mail::send('register.mail', $request->all(), function($message) use ($request) {
-            $message->from("hkk710@gmail.com");
+    /*    Mail::send('register.mail', $request->all(), function($message) use ($request) {
+            $message->from("amritaphysicaldepartment@gmail.com");
             $message->to($request->email);
             $message->subject('Registration success!');
-        });
+        });*/
         $register->save();
 
         Session::flash('success', 'Registration done successfully!');

@@ -57,18 +57,17 @@
                                 <label for="batch" class="col-sm-3 control-label">Batch:</label>
                                 <div class="col-sm-9">
                                     <select name="batch" id="batch" class="form-control">
-                                        <option value="ME">ME</option>
-                                        <option value="ECE">ECE</option>
-                                        <option value="EEE">EEE</option>
-                                        <option value="CSE">CSE</option>
-                                        <option value="CSA">CSA</option>
+                                        <option value="FIRST YEAR">FIRST YEAR</option>
+                                        <option value="SECOND YEAR">SECOND YEAR</option>
+                                        <option value="THIRD YEAR">THIRD YEAR</option>
+                                        <option value="MSC">MSC</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="roll_no" class="col-sm-3 control-label">Roll No:</label>
                                 <div class="col-sm-9">
-                                    <input type="text" class="form-control" id="roll_no" name="roll_no" placeholder="EG:AM.AR.U313BCA001" value="{{ old('roll_no') }}">
+                                    <input type="text" class="form-control" id="roll_no" name="roll_no" placeholder="EG:AM.BT.U3MIB15050" value="{{ old('roll_no') }}">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -165,7 +164,8 @@
                                     </div>
                                 </div>
                             </div><br>
-                            <div class="g-recaptcha col-md-offset-5" data-sitekey="6LfBSRUUAAAAAN4JZvEut9Mt8Dq7lnXmypA8j5C2"></div><br>
+                            <!--captcha -->
+                    <!--        <div class="g-recaptcha col-md-offset-5" data-sitekey="6LfBSRUUAAAAAN4JZvEut9Mt8Dq7lnXmypA8j5C2"></div><br>-->
                             <div class="text-right">
                                 {{ Form::submit('Register', ['class' => 'btn btn-default']) }}
                             </div>

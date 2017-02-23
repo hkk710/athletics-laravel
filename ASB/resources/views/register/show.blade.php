@@ -14,7 +14,7 @@ font-family: 'Open Sans', sans-serif;
 font-weight: 300;
 line-height: 1.42em;
 color:#A7A1AE;
-background-color:#1F2739;
+background-color:grey;
 }
 
 h1 {
@@ -114,6 +114,10 @@ transition-timing-function: line;
 
 </style>
 <body style="color:#fff;">
+    <div >
+        <p> <center><span style="color:#fff; font-size:30px">Registration list</span> </center</p>
+    </div>
+    <div style="padding-left:50px; padding-right:50px">
 <table class="table container" style="color:#fff;">
     <thead>
         <div class="container">
@@ -146,6 +150,7 @@ transition-timing-function: line;
         @endforeach
     </tbody>
 </table>
+</div>
 </body>
 <script type="text/javascript">
     $('table').dataTable();
